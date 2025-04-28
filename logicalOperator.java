@@ -3,11 +3,14 @@ public class logicalOperator{
         int a = 10;
         int b = 20;
         int c = 30;
+        boolean result = a < b && b < c ;
 
         // Logical AND
-        if (a < b && b < c) {
-            System.out.println("Both conditions are true");
-        }
+        // if (result = (a < b && b < c)) {
+        //     System.out.println("Both conditions are true");
+        // }
+
+        System.out.println(result);
 
         // Logical OR
         if (a > b || b < c) {
