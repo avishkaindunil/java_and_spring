@@ -19,6 +19,6 @@ public class demoMethods {
         obj.playMusic();
 
         String str = obj.getMeAPen(2);
-        System.err.println(str);
+        System.out.println(str);
     }
 }
