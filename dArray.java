@@ -5,6 +5,7 @@ public class dArray {
         for(int l=0; l<5; l++){
             for(int m=0; m<5; m++){
                 for(int n=0; n<5; n++){
+                    matrix[l][m][n] = (int)(Math.random() * 10);
                     System.out.print(matrix[l][m][n] + " ");
                 }
                 System.out.print(" ");
