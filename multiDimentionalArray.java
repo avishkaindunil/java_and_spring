@@ -1,5 +1,6 @@
 public class multiDimentionalArray {
     public static void main(String[] args){
+        int matrix[][] = new int[5][5];
         int num1[][] = new int[5][5];
         int num2[][] = {
             {1, 2, 3, 4, 5},
@@ -31,9 +32,9 @@ public class multiDimentionalArray {
         System.out.println();
         
         System.out.println("Enhanced For Loop in Multi Dimentional Array: " + "\n");
-        for(int o[] : num1){
-            for(int p : o){
-                System.out.print(p + " ");
+        for(int row[] : matrix){
+            for(int elements : row){
+                System.out.print(elements + " ");
             }
             System.out.println();
         }
