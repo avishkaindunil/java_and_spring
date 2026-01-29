@@ -18,12 +18,22 @@ public class multiDimentionalArray {
         }
 
         System.out.println();
-        System.out.println("Assigning values to Multi Dimentional Array: " + "\n");
 
+        System.out.println("Assigning values to Multi Dimentional Array: " + "\n");
         for(int m=0; m<5; m++){
             for(int n=0; n<5; n++){
                 num1[m][n] = (int)(Math.random() * 10);
                 System.out.print(num1[m][n] + " ");
+            }
+            System.out.println();
+        }
+
+        System.out.println();
+        
+        System.out.println("Enhanced For Loop in Multi Dimentional Array: " + "\n");
+        for(int o[] : num1){
+            for(int p : o){
+                System.out.print(p + " ");
             }
             System.out.println();
         }
