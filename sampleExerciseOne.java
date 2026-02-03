@@ -15,16 +15,29 @@ public class sampleExerciseOne{
 
         scanner.close();
 
+        int max = arr[0];
+        int min = arr[0];
+
         System.out.print("Your numbers are: { ");
 
         for(int i = 0; i < arr.length; i++){
             if(i==arr.length - 1){
-                System.out.print(arr[i] + " }");
+                System.out.print(arr[i] + " }" + "\n");
             } else {
                 System.out.print(arr[i] + ", ");
             }
         }
 
-        
+        for(int nums : arr){
+            if(nums > max){
+                max = nums;
+            }
+            if(nums < min){
+                min = nums;
+            }
+        }
+
+        System.out.println("Highest value is: " + max);
+        System.out.println("Lowest value is: " + min);
    }
 }
