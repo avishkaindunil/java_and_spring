@@ -2,14 +2,15 @@ import java.util.Scanner;
 
 public class grossPayCalculator {
     public static void main(String[] args){
-        int hours = 0;
+        double hoursWorked = 0;
         double payRate = 0;
         int quota = 10;
+        int maxHours = 40;
 
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("How many hours did you worked: ");
-        hours = scanner.nextInt();
+        hoursWorked = scanner.nextDouble();
 
         System.out.print("What is your pay rate: ");
         payRate = scanner.nextDouble();
@@ -20,9 +21,15 @@ public class grossPayCalculator {
         System.out.print("Enter your letter grade: ");
         String grade = scanner.next();
 
+        while(hoursWorked > maxHours){
+            System.out.println("Invalid entry. Your hours must be between 1 and 40. Try again");
+            System.out.print("Enter your correct worked hours: ");
+            hoursWorked = scanner.nextDouble();
+        }
+
         scanner.close();
 
-        double grossPay = hours * payRate;
+        double grossPay = hoursWorked * payRate;
 
         String message = switch(grade){
             case "A" -> "Exellent Job!";
