@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 class Rectangle{
     private double length;
     private double width;
@@ -29,6 +31,18 @@ class Rectangle{
 
 public class moreOnObjects{
     public static void main(String[] args){
-       
+        Rectangle rectangle = new Rectangle();
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the length: ");
+        rectangle.setLength(scanner.nextDouble());
+
+        System.out.print("Enter the width: ");
+        rectangle.setWidth(scanner.nextDouble());
+
+        scanner.close();
+
+        System.out.println(rectangle.calculateArea());
     }
 }
