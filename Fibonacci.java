@@ -25,6 +25,8 @@ public class Fibonacci {
         System.out.print("Enter n: ");
         int n = sc.nextInt();
 
+        sc.close();
+
         printFibonacci(n);
     }
 }
