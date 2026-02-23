@@ -20,14 +20,21 @@ class AdvCalc extends Calc{ //Sub, Child, Derrived Class
     }
 }
 
+class VeryAdvCalc extends AdvCalc{ //In this class represennt multilevel inheritance
+    public double power(int n1, int n2){
+        return Math.pow(n1, n2);
+    }
+}
+
 public class SimpleInheritance {
     public static void main(String[] args){
-        AdvCalc advCalc = new AdvCalc();
+        VeryAdvCalc advCalc = new VeryAdvCalc();
         int r1 = advCalc.add(5, 4);
         int r2 = advCalc.sub(5, 4);
         int r3 = advCalc.multi(5, 4);
         int r4 = advCalc.div(5, 4);
+        int r5 = (int)advCalc.power(5, 4);
 
-        System.out.println(r1 + " " +r2 + " " + r3 + " " + r4);
+        System.out.println(r1 + " " +r2 + " " + r3 + " " + r4 + " " + r5);
     }
 }
