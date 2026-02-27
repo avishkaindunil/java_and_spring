@@ -11,7 +11,7 @@ class Calculator {
         return n1 + n2;
     }
 
-    //In this class has three different methods containg same thing and same names. So, in this case called as METHOD OVERLOADING
+    //In this class has three different methods containg same method names, same return types and different parameters. So, in this case called as METHOD OVERLOADING
 }
 
 public class methodOverloading{
