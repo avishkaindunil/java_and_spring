@@ -11,13 +11,17 @@ class Calculator {
         return n1 + n2;
     }
 
+    public long add(long n1, long n2){
+        return n1 + n2;
+    }
+
     //In this class has three different methods containg same method names, same return types and different parameters. So, in this case called as METHOD OVERLOADING
 }
 
 public class methodOverloading{
     public static void main(String[] args){
         Calculator calc = new Calculator();
-        int result = calc.add(1, 5, 4);
+        long result = calc.add(9460730472580800L, 9460730472580800L);
         System.out.println(result);
     }
 }
