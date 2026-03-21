@@ -5,6 +5,8 @@ abstract class Car{
     public void playing(){
         System.out.println("Music is playing");
     }
+
+    // NOTE:  Abstract class can contain normal methods and abstract methods. But abstract method needs an abstract class and that's compulsory.
 }
 
 abstract class WagonR extends Car{
