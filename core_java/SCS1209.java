@@ -31,6 +31,5 @@ public class SCS1209 {
 
         B b = new B(a);
         b.show();
-
     }
 }
