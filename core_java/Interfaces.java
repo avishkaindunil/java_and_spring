@@ -1,6 +1,8 @@
 interface A {
     int age = 25; //Both vairbale are final and static in interface
-    String city ="Mumbai";
+    String city = "Mumbai";
+
+    // age = 26; //Cannot reassign
 
     void show();
     void config();
