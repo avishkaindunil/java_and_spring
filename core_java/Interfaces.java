@@ -4,7 +4,7 @@ interface A {
 
     // age = 26; //Cannot reassign
 
-    void show();
+    void show(); //every method in interface is public abstract
     void config();
 }
 
