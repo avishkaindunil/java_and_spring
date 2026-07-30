@@ -6,15 +6,28 @@ interface A {
 
     void show(); //every method in interface is public abstract
     void config();
+    void run();
 }
 
-class B implements A{
+interface C {
+    void run();
+}
+
+interface D extends C{
+
+}
+
+class B implements A,C{
     public void show(){
         System.out.println("In Show");
     }
 
     public void config(){
         System.out.println("In Config");
+    }
+
+    public void run(){
+        System.out.println("In Run");
     }
 }
 
@@ -23,6 +36,7 @@ public class Interfaces {
          A obj = new B();
          obj.show();
          obj.config();
+         obj.run();
          
          System.out.println(A.age);
          System.out.println(A.city);
