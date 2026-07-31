@@ -6,7 +6,7 @@ interface A {
 
     void show(); //every method in interface is public abstract
     void config();
-    void run();
+    // void run();
 }
 
 interface C {
@@ -36,7 +36,10 @@ public class Interfaces {
          A obj = new B();
          obj.show();
          obj.config();
-         obj.run();
+        //  obj.run();
+
+         C objOne = new B();
+         objOne.run();
          
          System.out.println(A.age);
          System.out.println(A.city);
