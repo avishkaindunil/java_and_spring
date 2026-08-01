@@ -15,7 +15,7 @@ public class Enum {
         System.out.println(stOne[0]);
 
         for(Status stat : stOne){ // Print all the values in the Status Enum
-            System.out.println(stat);
+            System.out.println(stat + " " + stat.ordinal());
         }
     }
 }
