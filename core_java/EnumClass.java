@@ -1,10 +1,14 @@
 enum Laptop {
     MacBook(2000),
     XPS(1500),
-    Surface(1200),
+    Surface,
     ThinkPad(1000);
 
     private int price;
+
+    private Laptop() {
+        price = 800;
+    }
 
     private Laptop(int price){
         this.price = price;
