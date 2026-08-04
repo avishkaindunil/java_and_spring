@@ -23,13 +23,12 @@ public class EnumClass {
 
     public static void main(String[] args){
         Laptop lap = Laptop.MacBook;
-        Laptop[] laptops = Laptop.values(); 
 
         System.out.println(lap.getClass().getSuperclass());
 
         System.out.println(lap + ": " + lap.getPrice());
 
-        for (Laptop laps : laptops){
+        for (Laptop laps : Laptop.values()){
             System.out.println(laps + ": " + laps.getPrice());
         }
     }
